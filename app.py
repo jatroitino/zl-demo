@@ -23,6 +23,7 @@ st.markdown(
     """
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
     html, body, [data-testid="stAppViewContainer"], [data-testid="stMain"], [data-testid="stHeader"] {
         background-color: #0A0C4A !important;
         color: #FFFFFF !important;
@@ -34,11 +35,13 @@ st.markdown(
         border: none;
         font-family: 'Poppins', sans-serif !important;
     }
-    .stMarkdown, .stText, h1, h2, h3, p, span {
+    /* No aplicamos Poppins a todos los span porque Streamlit usa spans para iconos (data-testid="stIconMaterial") */
+    .stMarkdown, .stText, h1, h2, h3, p {
         color: #FFFFFF !important;
         font-family: 'Poppins', sans-serif !important;
     }
-    /* Excepción: los iconos Material usados por Streamlit con la clase stIconMaterial deben conservar su propia fuente */
+    /* Excepción: los iconos Material usados por Streamlit (data-testid="stIconMaterial") deben conservar su propia fuente */
+    [data-testid="stIconMaterial"], [data-testid="stIconMaterial"] *, [data-testid="stIconMaterial"]::before, [data-testid="stIconMaterial"]::after,
     .stIconMaterial, .stIconMaterial *, .stIconMaterial::before, .stIconMaterial::after {
         font-family: 'Material Icons' !important;
         speak: none;
