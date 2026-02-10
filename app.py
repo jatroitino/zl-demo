@@ -10,18 +10,29 @@ col1, col2 = st.columns([1, 10])
 with col1:
     st.image(logo_url, width=120)
 with col2:
-    st.markdown(f"<h1 style='color:#0A0C4A; margin:0; padding-top:6px;'>Zotal — Asistente Técnico</h1>", unsafe_allow_html=True)
-    st.markdown("**Bienvenido a Zotal. Consulta nuestros productos y recomendaciones.**")
+    st.markdown(f"<h1 style='color:#FFFFFF; margin:0; padding-top:6px;'>Zotal — Asistente Técnico</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='color:#FFFFFF; margin:0.1rem 0 0 0;'><strong>Bienvenido a Zotal. Consulta nuestros productos y recomendaciones.</strong></p>", unsafe_allow_html=True)  
 
-# Pequeño estilo adicional para botones y llamadas a la acción
+# Ajustes de estilo para fondo oscuro y texto blanco
 st.markdown(
     """
     <style>
-    .stButton>button { background-color: #0A0C4A; color: white; }
+    html, body, [data-testid="stAppViewContainer"], [data-testid="stMain"], [data-testid="stHeader"] {
+        background-color: #0A0C4A !important;
+        color: #FFFFFF !important;
+    }
+    .stButton>button {
+        background-color: #FFFFFF !important;
+        color: #0A0C4A !important;
+        border: none;
+    }
+    .stMarkdown, .stText, h1, h2, h3, p, span {
+        color: #FFFFFF !important;
+    }
     </style>
     """,
     unsafe_allow_html=True
-)
+) 
 
 
 # 1. Configuración de seguridad para la API Key
