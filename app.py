@@ -12,10 +12,10 @@ st.markdown(f"""
 <div style='display:flex; align-items:center; gap:1rem;'>
   <img src="{logo_url}" style="width:150px; object-fit:contain;"/>
   <div>
-    <h1 style='color:#FFFFFF; margin:0; padding-top:6px; font-family: Poppins, sans-serif;'>Asistente Técnico</h1>
-    <p style='color:#FFFFFF; margin:0.1rem 0 0 0; font-family: Poppins, sans-serif;'><strong>Preguntanos en tu idioma.<br>Ask us in your language.<br>Fragen Sie uns in Ihrer Sprache.<br>Hãy hỏi chúng tôi bằng ngôn ngữ của bạn.<br>Kysy meiltä omalla kielelläsi.</strong></p>
+    <h1 style='color:#FFFFFF; margin: 0 0 0 10px; padding-top:6px; font-family: Poppins, sans-serif;'>Asistente Técnico</h1>
   </div>
 </div>
+<p style='color:#FFFFFF; margin:0.1rem 0 0 0; font-family: Poppins, sans-serif;'>Preguntanos en tu idioma.<br>Ask us in your language.<br>Fragen Sie uns in Ihrer Sprache.<br>Hãy hỏi chúng tôi bằng ngôn ngữ của bạn.<br>Kysy meiltä omalla kielelläsi.</p>
 """, unsafe_allow_html=True)
 
 # Ajustes de estilo para fondo oscuro y texto blanco
