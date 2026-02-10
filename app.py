@@ -41,7 +41,7 @@ st.markdown(
 # En la nube, no pondremos la clave aquí por seguridad.
 api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-flash') # El 1.5 es más estable para demos largas
+model = genai.GenerativeModel('models/gemini-2.5-flash') # El 1.5 es más estable para demos largas
 
 # 2. Tu base de conocimientos (Pega aquí el texto de las fichas)
 contexto = """
