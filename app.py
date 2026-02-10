@@ -7,34 +7,42 @@ logo_url = "https://www.zotal.com/wp-content/uploads/2023/05/zotal_laboratorio_l
 st.set_page_config(page_title="Zotal — Asistente", page_icon=icon_url)
 
 # Header con logo y texto de bienvenida
-col1, col2 = st.columns([3, 8])
-with col1:
-    st.image(logo_url, width=150)
-with col2:
-    st.markdown(f"<h1 style='color:#FFFFFF; margin:0; padding-top:6px;'>Asistente Técnico</h1>", unsafe_allow_html=True)
-    
-st.markdown("<p style='color:#FFFFFF; margin:0.1rem 0 0 0;'><strong>Bienvenido a Zotal. Consulta nuestros productos y recomendaciones.</strong></p>", unsafe_allow_html=True)  
+# Usamos un contenedor flex para alinear verticalmente el logo y el título
+st.markdown(f"""
+<div style='display:flex; align-items:center; gap:1rem;'>
+  <img src="{logo_url}" style="width:150px; object-fit:contain;"/>
+  <div>
+    <h1 style='color:#FFFFFF; margin:0; padding-top:6px; font-family: Poppins, sans-serif;'>Asistente Técnico</h1>
+    <p style='color:#FFFFFF; margin:0.1rem 0 0 0; font-family: Poppins, sans-serif;'><strong>Preguntanos en tu idioma.<br>Ask us in your language.<br>Fragen Sie uns in Ihrer Sprache.<br>Hãy hỏi chúng tôi bằng ngôn ngữ của bạn.<br>Kysy meiltä omalla kielelläsi.</strong></p>
+  </div>
+</div>
+""", unsafe_allow_html=True)
 
 # Ajustes de estilo para fondo oscuro y texto blanco
 st.markdown(
     """
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
     html, body, [data-testid="stAppViewContainer"], [data-testid="stMain"], [data-testid="stHeader"] {
         background-color: #0A0C4A !important;
         color: #FFFFFF !important;
+        font-family: 'Poppins', sans-serif !important;
     }
     .stButton>button {
         background-color: #FFFFFF !important;
         color: #0A0C4A !important;
         border: none;
+        font-family: 'Poppins', sans-serif !important;
     }
     .stMarkdown, .stText, h1, h2, h3, p, span {
         color: #FFFFFF !important;
+        font-family: 'Poppins', sans-serif !important;
     }
+    img { object-fit: contain; }
     </style>
     """,
     unsafe_allow_html=True
-) 
+)
 
 
 # 1. Configuración de seguridad para la API Key
