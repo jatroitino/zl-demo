@@ -1,8 +1,28 @@
 import streamlit as st
 import google.generativeai as genai
 
-st.set_page_config(page_title="Asistente", page_icon="🧪")
-st.title("🧪 Asistente Técnico")
+# --- Imagen corporativa Zotal ---
+logo_url = "https://www.zotal.com/wp-content/uploads/2023/05/zotal_laboratorio_logo.png"
+st.set_page_config(page_title="Zotal — Asistente", page_icon=logo_url)
+
+# Header con logo y texto de bienvenida
+col1, col2 = st.columns([1, 10])
+with col1:
+    st.image(logo_url, width=120)
+with col2:
+    st.markdown(f"<h1 style='color:#0A0C4A; margin:0; padding-top:6px;'>Zotal — Asistente Técnico</h1>", unsafe_allow_html=True)
+    st.markdown("**Bienvenido a Zotal. Consulta nuestros productos y recomendaciones.**")
+
+# Pequeño estilo adicional para botones y llamadas a la acción
+st.markdown(
+    """
+    <style>
+    .stButton>button { background-color: #0A0C4A; color: white; }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # 1. Configuración de seguridad para la API Key
 # En la nube, no pondremos la clave aquí por seguridad.
