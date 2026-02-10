@@ -38,6 +38,16 @@ st.markdown(
         color: #FFFFFF !important;
         font-family: 'Poppins', sans-serif !important;
     }
+    /* Excepción: los iconos Material usados por Streamlit con la clase stIconMaterial deben conservar su propia fuente */
+    .stIconMaterial, .stIconMaterial *, .stIconMaterial::before, .stIconMaterial::after {
+        font-family: 'Material Icons' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+    }
     img { object-fit: contain; }
     </style>
     """,
