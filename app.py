@@ -190,14 +190,6 @@ with st.sidebar:
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
-    st.chat_message("assistant").markdown("""
-        ¡Hola! Soy tu asistente técnico de Zotal. Puedo ayudarte con:
-        * **Dosificaciones exactas** según superficie.
-        * **Comparativa** entre productos (ej: Arpón vs Zotal G).
-        * **Plazos de seguridad** y recomendaciones de uso.
-        
-        ¿Qué producto te gustaría consultar hoy?
-    """)
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
