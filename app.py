@@ -45,7 +45,8 @@ model = genai.GenerativeModel('models/gemini-2.5-flash') # El 1.5 es más establ
 
 # 2. Tu base de conocimientos (Pega aquí el texto de las fichas)
 contexto = """
-ARPON DIAZIPOL
+### PRODUCTO: ARPON DIAZIPOL 
+PROFESIONAL
 ARPON DIAZIPOL es un insecticida emulsionable que combina las propiedades de eficacia y volteo a bajas concentraciones propias de la Cipermetrina con el potente y prolongado efecto residual de la Deltametrina, obteniéndose de este modo unos insuperables resultados en la desinsectación de todo tipo de instalaciones ganaderas. Su amplio espectro de acción incluye tanto a insectos voladores como insectos rastreros. La combinación Cipermetrina/Deltametrina/Tetrametrina rinde unos espectaculares resultados en la eliminación de moscas al actuar ambos ingredientes de un modo potente, simultáneo y sostenido sobre el insecto. 
 DOSIFICACIÓN: Se emplea diluido del 0,3 al 1%.
 PROPIEDADES E INDICACIONES: 
@@ -56,7 +57,45 @@ Plazo de seguridad: 24 a 48 horas.
 Modo de empleo: pulverización. No reutilizar el envase. Eliminar el envase y los restos de producto de un modo seguro. Limpiar adecuadamente el equipo de aplicación. El producto es tóxico para gatos, abejas y organismos acuáticos. No eliminar el producto a través de desagües, alcantarillas o a cursos de agua. 
 A FIN DE EVITAR RIESGOS PARA LAS PERSONAS Y EL MEDIO AMBIENTE SIGA LAS INSTRUCCIONES DE USO. 
 USO GANADERO: PERSONAL NO PROFESIONAL. PERSONAL PROFESIONAL. PERSONAL PROFESIONAL ESPECIALIZADO.
-SANITAS Dual 
+Composición	
+Excipiente c.p.s.: 100%, Tetrametrina: 0,09%, Cipermetrina: 8,50 %, Deltametrina: 1,25%
+Uso en entorno ganadero: nº reg	0567-P
+Formatos	
+Envases de 250 ml. 1 y 5 l.
+URL DE FICHA: https://www.zotal.com/productos/insecticidas/arpon-diazipol/
+
+### PRODUCTO: ARPON DIAZIPOL
+DOMESTICO
+AHORA USO POR EL PÚBLICO EN GENERAL
+ARPÓN® Diazipol es un plaguicida emulsionable que combina Cipermetrina/Deltametrina/Tetrametrina para unos espectaculares resultados en la eliminación de moscas al actuar ambos ingredientes de un modo potente, simultáneo y sostenido sobre el insecto.
+
+Aplicaciones
+Este plaguicida es un producto ideal para resultados insuperables en la desinsectación de todo tipo de instalaciones ganaderas, en áreas de estabulación de animales, como establos, granjas, perreras o mataderos. Es un plaguicida también apto para clínicas veterinarias (zonas de hospitalización, jaulas…) y vehículos de transporte de animales.
+Su amplio espectro de acción incluye tanto a insectos voladores  (moscas, mosquitos, abejorros, avispas, tábanos) como insectos reptantes (pulgas, garrapatas, chinches, escarabajos, cucarachas, arañas, hormigas, piojos…).
+
+Modo de empleo
+Dependiendo del grado de  infestación y de la persistencia que se desee, ARPÓN® Diazipol se emplea mezclado con agua a concentraciones que van del 0.3 %  al 1 %. Una vez mezclado, debe aplicarse por pulverización sobre la superficie a tratar a razón de 5 litros por cada 100 m2 para superficies impermeables o de 10 litros por cada 100 m2 para superficies no impermeables.
+Una vez preparada la emulsión en agua, debe utilizarse antes de 12 horas. Aplicar el tratamiento en ausencia de animales. Plazo de  seguridad 24-48 horas.
+
+Indicaciones
+Antes de usar el plaguicida ARPÓN® Diazipol léase detenidamente la etiqueta.
+Ventílese adecuadamente antes de entrar en el recinto.
+No deberá mezclarse con ningún otro producto.
+No reutilizar el envase.
+Eliminar el envase y los restos de producto de un modo seguro.
+Limpiar adecuadamente el equipo de aplicación.
+El producto es tóxico para gatos, abejas y organismos acuáticos.
+No eliminar el producto a través de desagües, alcantarillas o cursos de agua.
+A fin de evitar riesgos para las personas y el medio ambiente, siga las instrucciones de uso.
+Información adicional
+Composición	
+Excipiente c.p.s.: 100%, Tetrametrina: 0,09%, Cipermetrina: 8,50 %, Deltametrina: 1,25%
+Uso en entorno ganadero: nº reg	0567-P
+Formatos	
+Envases de 250 ml. y 1 L.
+URL DE FICHA: https://www.zotal.com/productos/insecticidas/arpon_diazipol/
+
+### PRODUCTO: SANITAS DUAL
 DESINFECTANTE INSECTICIDA AMPLIO ESPECTRO 
 400 
 MICROBIOS 
@@ -94,9 +133,14 @@ Aplicar a razón de:
 CONSEJOS DE UTILIZACIÓN: 
 Utilizar en ambientes bien ventilados. Aplicar el tratamiento en ausencia de animales 
 y asegurar una óptima ventilación del recinto antes del realojo de los animales. Esperar un plazo de seguridad: 24-48 horas. 
-NÚMERO DE REGISTRO: 0987-P
+Composición	
+Excipiente c.p.s.: 100%, Ácido glicólico 1,4%, Alfacipermetrina 6%, Alquildimetilbencil cloruro de amonio 15,92%, Didecil dimetil cloruro de amonio: 7,25%, Glutaraldehido: 10%
+Nº reg. / Nº reg. 0987-P
+Formatos	
+250 ml, 1 L, 5 L, 25 L
+URL DE FICHA: https://www.zotal.com/productos/desinfectantes-industriales/sanitas-dual/
 
-PREVIO Diox
+### PRODUCTO: PREVIO DIOX
 DESINFECTANTE Y ACTIVADOR PARA PREPARACIÓN DE DIÓXIDO DE CLORO
 Previo Diox es un desinfectante de amplio espectro (virus, bacterias, hongos,...) para el tratamiento del agua de consumo animal y humano, y sus canalizaciones, eliminando el biofilm, así como tratamiento desinfectante en la industria alimentaria: frutas, verduras, industrias cárnicas, etc; también se usa en sistemas de refrigeración de agua.
 DESCRIPCIÓN: Previo Diox es un desinfectante de amplio espectro (virus, bacterias, hongos,...) para el tratamiento del agua de consumo animal y humano, así como tratamiento desinfectante en la industria alimentaria: frutas, verduras, industrias cárnicas, etc; también se usa en sistemas de refrigeración de agua. 
@@ -124,8 +168,13 @@ Dosificación estándar: 1 L de mezcla por cada 20 m3 de agua. Esta dosificació
 OBSERVACIONES: 
 Una vez mezclados los componentes A y B, se recomienda almacenar el envase bien cerrado, en un lugar ventilado, protegido de la luz y de temperaturas extremas por un máximo de 30 días. 
 Los envases no podrán ser reutilizados.
+Composición	
+Componente A: Clorito sódico 1,55%, Excipientes csp 100%, Componente B: Ácido clorhídrico 13,5%, Excipientes csp 100%
+Formatos	
+Componente A: envase de 24 kg. Componente B: envase de 1 kg.
+URL DE FICHA: https://www.zotal.com/productos/detergentes-higienizantes/previodiox/
 
-PREVIO Saludine
+### PRODUCTO: PREVIO SALUDINE
 HIGIENIZANTE TRATAMIENTO DE AGUAS
 Desinfectante de agua de bebida a base de peróxido de hidrógeno, especialmente indicado para aguas de consumo animal en explotaciones ganaderas. De alto poder oxidante y desinfectante, permite eliminar el biofilm e impedir su reaparición controlando de esta forma la aparición de diarreas. 
 Inhibidor de la incrustación. Controla la corrosión. Cumple la norma UNE 902 para tratamiento de aguas de consumo para peróxidos de hidrógeno. 
@@ -141,9 +190,13 @@ LIMPIEZA DE CONDUCCIONES:
 Emplear una solución del 1,5% al 3% de PREVIO Saludine. 
 Aplicación: recirculación, dejando actuar durante 3 horas. 
 El producto también puede ser aplicado en continuo mediante bomba dosificadora.
+Composición	
+Excipiente: c.s.p. 100%, Peróxido de hidrógeno: 50%
+Formatos	
+24 kg., 240 kg., 1.200 kg.
+URL DE FICHA: https://www.zotal.com/productos/detergentes-higienizantes/previo-saludine/
 
-
-SANITAS Neozital
+### PRODUCTO: SANITAS NEOZITAL
 DESINFECTANTE OXIDANTE
 Desinfectante de uso ganadero de amplio espectro que, gracias a su principio activo, el ácido peracético, proporciona una excelente capacidad de desinfección a concentraciones muy reducidas. Su fórmula es extremadamente potente, siendo capaz de eliminar bacterias, hongos y virus, pero a la vez completamente biodegradable, por lo que no genera residuos potencialmente peligrosos para el medio ambiente. Sus dosis de uso van del 0,3 al 1%. 
 DOSIFICACIÓN: Rutinaria 
@@ -161,10 +214,14 @@ Aplicar en ausencia de animales. En la desinfección por nebulización, retirar 
 SANITAS® NEOZITAL® se utiliza diluido en agua a concentraciones de 0,5% (1 parte en 200 de agua) a 1% (1 parte en 50 de agua) según la carga de suciedad presente. En aquellas zonas donde se ha confirmado la presencia de patógenos víricos, el producto puede ser utilizado a un 1%. Para vados sanitarios, medios de transporte y contenedores se recomienda la aplicación del producto al 0,5%. 
 En nebulización aérea se debe utilizar el producto a la dosis de 0,5%. Como norma general, se recomienda la aplicación de 0,1-0,3 litros del producto diluido por cada metro cuadrado. 
 USO EXCLUSIVO POR PERSONAL ESPECIALIZADO. 
-N° DE REGISTRO: 01228-P
+Composición	
+Ácido peracético: 5%, Peróxido de hidrógeno 25,27%
+Formatos	
+5 kg., 20 kg., 200 kg, 1000 kg.
+Uso en entorno ganadero Nº Reg.: 1228-P
+URL DE FICHA: https://www.zotal.com/productos/desinfectantes-industriales/sanitas-neozital/
 
-Zotal G Clásico 
-Zotal D Clásico
+### PRODUCTO: Zotal G Clásico 
 DESINFECTANTE DESODORIZANTE
 ZOTAL es un desinfectante y fungicida, de tipo fenólico, que presenta una gran eficacia allí donde existe materia orgánica abundante y condiciones de suciedad. 
 DOSIFICACIÓN: Se emplea diluido en agua al 5%.
@@ -175,8 +232,73 @@ APLICACIONES:
 El preparado ZOTAL, desinfectante en forma de líquido emulsionable, debe su acción a su contenido en fenoles sintéticos, confiriéndole propiedades bactericidas, fungicidas, desodorizantes y frente a virus como el SARS Cov2. Para su utilización eficaz es necesario diluirlo en agua y aplicar por contacto. El resto de componentes favorecen la acción desinfectante y bactericida, ayudando a la limpieza y asegurando la humectación y penetración del producto, consiguiéndose con ello una mayor eficacia del mismo. 
 MODO DE EMPLEO: 
 ZOTAL se emplea emulsionado al 5% en agua (disuelto) en riegos y baldeos o por frotamiento (cepillo, escoba, etc...) remojo o pulverización. De esta forma, está recomendado para desinfectar aquellos lugares que puedan albergar microbios ejerciendo sus ingredientes activos una acción sinérgica y persistente. 
-N° DE REGISTRO ZOTAL G CLÁSICO (antiguo Zotal Z): 11683-P N° DE REGISTRO ZOTAL D CLÁSICO (antiguo Zotal D): 
+N° DE REGISTRO: 11683-P 
 23-20/40-12008
+Composición	
+Ácido glicólico 0,45%, Clorocresol 2,95 %, Hidrocarburos aromáticos, C9-C12, destilación de benceno y excipientes c.s.p. 100 %
+Formatos	
+250 gr., 500 gr., 1 kg, 5 kg., 10 kg, 58 kg, 240 kg.
+URL DE FICHA: https://www.zotal.com/productos/desinfectantes-industriales/zotal-g-clasico/
+
+### PRODUCTO: Zotal D Clásico
+ZOTAL® D Clásico en su registro doméstico puede ser utilizado en almacenes, cuarteles, patios, chalets, casas de campo y otras instalaciones de uso público o privado. Por su acción desinfectante y olor característico elimina olores desagradables, proporcionando un ambiente de higiene y limpieza.
+Debe aplicarse en zonas ventiladas. Emulsione el líquido (diluido en agua) al 5% para riegos y baldeos de superficies (paredes, suelos, etc.). Debe removerse la emulsión antes de su uso. En inodoros, urinarios, letrinas, etc. puede usarse puro (sin diluir).
+Aplicaciones
+El desinfectante ZOTAL® D Clásico debe su acción a su contenido en fenoles sintéticos, confiriéndole propiedades microbicidas, fungicidas y desodorizantes. Para su utilización eficaz es necesario diluirlo en agua y aplicar por contacto. El resto de componentes favorecen la acción desinfectante y bactericida.  De este modo se favorece la limpieza y asegura la humectación y penetración del producto, consiguiéndose con ello una mayor eficacia del mismo.
+Modo de empleo
+ZOTAL® D Clásico se emplea emulsionado al 5% en agua (disuelto) en riegos y baldeos. También puede aplicarse por frotamiento (cepillo, escoba, etc.), remojo o pulverización. Está recomendado para desinfectar aquellos lugares que puedan albergar microbios, ejerciendo sus ingredientes activos una acción sinérgica y persistente.
+Composición	
+Ácido glicólico 0,45%, Clorocresol 2,95 %, Hidrocarburos aromáticos, C9-C12, destilación de benceno y excipientes c.s.p. 100 %
+Formatos	
+250 gr, 500 gr, 1 kg, 5 kg, 10 kg
+Nº reg. / Nº reg.	23-20/40-12008
+URL DE FICHA ZOTAL D CLÁSICO: https://www.zotal.com/productos/desinfectantes-industriales/zotal-d-clasico/
+
+### PRODUCTO: ZOTAL ZERO XXI
+DESINFECTANTE PERFUME LIMÓN
+Desinfectante microbicida de uso doméstico y
+amplio espectro CON OLOR A LIMON indicado
+para la desinfección general de todo tipo de locales
+e instalaciones de uso industrial, como almacenes,
+cuarteles, patios, chalets, casas de campo y otras
+instalaciones de uso privado o público. Por su
+acción desinfectante y OLOR A LIMÓN, elimina
+olores desagradables proporcionando un ambiente
+de higiene y limpieza. Se emplea diluido al 5% (250
+ml en 5 litros de agua).
+PROPIEDADES E INDICACIONES:
+ZOTAL ZERO XXI es el Zotal de siempre pero con OLOR A LIMÓN. Está
+indicado para ser utilizado en almacenes, cuarteles, patios, chalets, casas
+de campo y otras instalaciones de uso privado o público. Por su acción
+desinfectante y OLOR A LIMÓN, elimina olores desagradables
+proporcionando un ambiente de higiene y limpieza, dejando la zona tratada
+con un olor agradable y a limpio.
+Debe aplicarse en zonas ventiladas y emulsionado (diluido en agua) al 5%
+para riegos y baldeos de superficies (paredes, suelos, etc.). Debe
+removerse la emulsión antes de su uso. En inodoros, urinarios, letrinas,
+etc., puede usarse puro (sin diluir).
+APLICACIONES:
+El preparado ZOTAL, desinfectante en forma de líquido emulsionable, debe
+su acción a su contenido en fenoles sintéticos sin disolventes, confiriéndole
+propiedades microbicidas, bactericidas, fungicidas, desodorizantes y frente
+a virus como el SARS COV2. Para su utilización eficaz es necesario diluirlo
+en agua y aplicar por contacto. El resto de componentes favorecen la
+acción desinfectante y bactericida, ayudando a la limpieza y asegurando la
+humectación y penetración del producto, consiguiéndose con ello una
+mayor eficacia del mismo.
+MODO DE EMPLEO:
+ZOTAL se emplea diluido al 5% en agua (250 ml en 5 litros de agua) para
+riegos y baldeos o por frotamiento (cepillo, escoba, etc…) remojo o
+pulverización. De esta forma, está recomendado para desinfectar aquellos
+lugares que puedan albergar microbios ejerciendo sus ingredientes activos
+una acción sinérgica y persistente.
+Nº DE INSCRIPCIÓN EN EL REGISTRO: 23-20/40-11885.
+USO POR EL PÚBLICO EN GENERAL, NO PROFESIONAL.
+Nº Reg	23-20/40-11885
+Composición	
+4-cloro-3-metilfenol 2,95%, Ácido glicólico 0,10%, Disolventes y excipientes c.s.p 100%
+URL DE FICHA: https://www.zotal.com/productos/desinfectantes-industriales/zotal-zero/
+
 """ 
 
 if "messages" not in st.session_state:
@@ -192,7 +314,7 @@ if prompt := st.chat_input("Consulta sobre productos ..."):
         st.markdown(prompt)
 
     with st.chat_message("assistant"):
-        full_prompt = f"Eres un experto en Zotal. Usa este contexto: {contexto}. Pregunta: {prompt}"
+        full_prompt = f"Eres un experto en Zotal. Cuanto en la respuesta se hable de un producto, incluye enlace a la URL DE LA FICHA. Usa este contexto: {contexto}. Pregunta: {prompt}"
         # Usamos stream=True para que la respuesta salga letra a letra (sensación de velocidad)
         response = model.generate_content(full_prompt, stream=True)
         
