@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # --- Imagen corporativa Zotal ---
-logo_url = "https://www.zotal.com/wp-content/uploads/2023/05/zotal_laboratorio_logo.png"
+logo_url = "https://www.zotal.com/wp-content/uploads/2023/06/favicon.png"
 st.set_page_config(page_title="Zotal — Asistente", page_icon=logo_url)
 
 # Header con logo y texto de bienvenida
@@ -176,6 +176,31 @@ ZOTAL se emplea emulsionado al 5% en agua (disuelto) en riegos y baldeos o por f
 N° DE REGISTRO ZOTAL G CLÁSICO (antiguo Zotal Z): 11683-P N° DE REGISTRO ZOTAL D CLÁSICO (antiguo Zotal D): 
 23-20/40-12008
 """
+
+with st.sidebar:
+    # Logo de Zotal (puedes usar una URL de su web o subirlo a tu repo)
+    st.image("https://www.zotal.com/wp-content/uploads/2018/06/logo-zotal-laboratorios.png", use_container_width=True)
+    
+    st.markdown("---")
+    st.markdown("### 🛠️ Configuración de la Demo")
+    st.info("Base de datos: 6 Fichas Técnicas Actualizadas")
+    
+    if st.button("Limpiar Chat"):
+        st.session_state.messages = []
+        st.rerun()
+
+    st.markdown("---")
+    st.caption("Uso interno exclusivo para demostración.")
+
+if not st.session_state.messages:
+    st.chat_message("assistant").markdown("""
+        ¡Hola! Soy tu asistente técnico de Zotal. Puedo ayudarte con:
+        * **Dosificaciones exactas** según superficie.
+        * **Comparativa** entre productos (ej: Arpón vs Zotal G).
+        * **Plazos de seguridad** y recomendaciones de uso.
+        
+        ¿Qué producto te gustaría consultar hoy?
+    """)
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
