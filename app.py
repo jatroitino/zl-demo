@@ -7,12 +7,13 @@ logo_url = "https://www.zotal.com/wp-content/uploads/2023/05/zotal_laboratorio_l
 st.set_page_config(page_title="Zotal — Asistente", page_icon=icon_url)
 
 # Header con logo y texto de bienvenida
-col1, col2 = st.columns([5, 7])
+col1, col2 = st.columns([3, 8])
 with col1:
-    st.image(logo_url, width=124)
+    st.image(logo_url, width=150)
 with col2:
     st.markdown(f"<h1 style='color:#FFFFFF; margin:0; padding-top:6px;'>Asistente Técnico</h1>", unsafe_allow_html=True)
-    st.markdown("<p style='color:#FFFFFF; margin:0.1rem 0 0 0;'><strong>Bienvenido a Zotal. Consulta nuestros productos y recomendaciones.</strong></p>", unsafe_allow_html=True)  
+    
+st.markdown("<p style='color:#FFFFFF; margin:0.1rem 0 0 0;'><strong>Bienvenido a Zotal. Consulta nuestros productos y recomendaciones.</strong></p>", unsafe_allow_html=True)  
 
 # Ajustes de estilo para fondo oscuro y texto blanco
 st.markdown(
