@@ -179,20 +179,17 @@ N° DE REGISTRO ZOTAL G CLÁSICO (antiguo Zotal Z): 11683-P N° DE REGISTRO ZOTA
 
 with st.sidebar:
     # Logo de Zotal (puedes usar una URL de su web o subirlo a tu repo)
-    st.image("https://www.zotal.com/wp-content/uploads/2018/06/logo-zotal-laboratorios.png", use_container_width=True)
+    st.image("https://www.zotal.com/wp-content/uploads/2023/05/zotal_laboratorio_logo.png", use_container_width=True)
     
     st.markdown("---")
     st.markdown("### 🛠️ Configuración de la Demo")
     st.info("Base de datos: 6 Fichas Técnicas Actualizadas")
-    
-    if st.button("Limpiar Chat"):
-        st.session_state.messages = []
-        st.rerun()
 
     st.markdown("---")
-    st.caption("Uso interno exclusivo para demostración.")
+    st.caption("Uso interno exclusivo para demostración.")    
 
-if not st.session_state.messages:
+if "messages" not in st.session_state:
+    st.session_state.messages = []
     st.chat_message("assistant").markdown("""
         ¡Hola! Soy tu asistente técnico de Zotal. Puedo ayudarte con:
         * **Dosificaciones exactas** según superficie.
@@ -201,9 +198,6 @@ if not st.session_state.messages:
         
         ¿Qué producto te gustaría consultar hoy?
     """)
-
-if "messages" not in st.session_state:
-    st.session_state.messages = []
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
