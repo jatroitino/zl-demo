@@ -2,15 +2,16 @@ import streamlit as st
 import google.generativeai as genai
 
 # --- Imagen corporativa Zotal ---
-logo_url = "https://www.zotal.com/wp-content/uploads/2023/06/favicon.png"
-st.set_page_config(page_title="Zotal — Asistente", page_icon=logo_url)
+icon_url = "https://www.zotal.com/wp-content/uploads/2023/06/favicon.png"
+logo_url = "https://www.zotal.com/wp-content/uploads/2023/05/zotal_laboratorio_logo.png"
+st.set_page_config(page_title="Zotal — Asistente", page_icon=icon_url)
 
 # Header con logo y texto de bienvenida
-col1, col2 = st.columns([1, 10])
+col1, col2 = st.columns([5, 7])
 with col1:
-    st.image(logo_url, width=120)
+    st.image(logo_url, width=124)
 with col2:
-    st.markdown(f"<h1 style='color:#FFFFFF; margin:0; padding-top:6px;'>Zotal — Asistente Técnico</h1>", unsafe_allow_html=True)
+    st.markdown(f"<h1 style='color:#FFFFFF; margin:0; padding-top:6px;'>Asistente Técnico</h1>", unsafe_allow_html=True)
     st.markdown("<p style='color:#FFFFFF; margin:0.1rem 0 0 0;'><strong>Bienvenido a Zotal. Consulta nuestros productos y recomendaciones.</strong></p>", unsafe_allow_html=True)  
 
 # Ajustes de estilo para fondo oscuro y texto blanco
@@ -175,18 +176,7 @@ MODO DE EMPLEO:
 ZOTAL se emplea emulsionado al 5% en agua (disuelto) en riegos y baldeos o por frotamiento (cepillo, escoba, etc...) remojo o pulverización. De esta forma, está recomendado para desinfectar aquellos lugares que puedan albergar microbios ejerciendo sus ingredientes activos una acción sinérgica y persistente. 
 N° DE REGISTRO ZOTAL G CLÁSICO (antiguo Zotal Z): 11683-P N° DE REGISTRO ZOTAL D CLÁSICO (antiguo Zotal D): 
 23-20/40-12008
-"""
-
-with st.sidebar:
-    # Logo de Zotal (puedes usar una URL de su web o subirlo a tu repo)
-    st.image("https://www.zotal.com/wp-content/uploads/2023/05/zotal_laboratorio_logo.png", use_container_width=True)
-    
-    st.markdown("---")
-    st.markdown("### 🛠️ Configuración de la Demo")
-    st.info("Base de datos: 6 Fichas Técnicas Actualizadas")
-
-    st.markdown("---")
-    st.caption("Uso interno exclusivo para demostración.")    
+""" 
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
